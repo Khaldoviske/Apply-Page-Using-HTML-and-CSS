@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="ApplyStyle.css">
+    <title>Survey Form</title>
+   
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                Questionnarie for the Company
+            </h1>
+            
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <p id="quest"><b>  Q1  </b></p>
+                <input type="text" name="question1" id="question1" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest"><b>  Q2  </b></p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Pic a number</option>
+                    <option value="Ans1">1</option>
+                    <option value="Ans2">2</option>
+                    <option value="Ans3">3</option>
+                    <option value="Ans4">4</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+
+            <!-- radio button section -->
+            <div class="form-group">
+                <p id="quest"><b>  Q3  </b></p>
+                <label for="">
+                    <input type="radio" name="source" value="Ans1"
+                    class="inputRadio"
+                    > Ans1
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Ans2"
+                    class="inputRadio"
+                    > Ans2
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Ans3"
+                    class="inputRadio"
+                    > Ans3
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Ans4"
+                    class="inputRadio"
+                    > Ans4
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Ans5"
+                    class="inputRadio"
+                    > Ans5
+                </label>
+            </div>
+            <!-- end of radio button -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest"><b>  favorite teacher </b></p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> Khankan
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Khaled Khankan
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  khankan khankan
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> Super khankan
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> khan khankan
+                </label>
+            </div>
+            <!-- End of checkbox section -->
+
+            
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest"><b>Talk about your self</b></p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Speak Beautiful..."></textarea>
+            </div>
+           
+
+<!-- File Upload section -->
+<div class="form-group">
+    <p id="quest"><b>Upload CV</b></p>
+    <input type="file" name="file" id="file-upload" class="formControl" accept=".pdf,.doc,.docx" required>
+</div>
+<!-- End of file upload section -->
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn"><b> Submit </b></button>
+            </div>
+
+            <p id="description">
+                Thank you for your time. You will hear from us as soon as possible 
+            </p>
+
+        </form>
+    </div>
+</body>
+</html>
